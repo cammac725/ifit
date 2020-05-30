@@ -1,16 +1,27 @@
 import React from 'react';
 import './App.css';
+import ProductNav from "./components/ProductNav";
+import MainNav from "./components/MainNav";
+import Hero from "./components/Hero";
+import MediaSlider from "./components/MediaSlider";
+import DesktopLibrary from "./components/DesktopLibrary";
+import EquipVisual from "./components/EquipVisual";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-        <h1>
-          iFit
-        </h1>
-        
+
+      <header>
+        <ProductNav />
+        <MainNav />
       </header>
+
+      <Hero />
+      <MediaSlider />
+      <DesktopLibrary />
+      <EquipVisual />
+      <Footer />
     </div>
   );
 }
